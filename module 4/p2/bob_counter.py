@@ -5,7 +5,7 @@ Write a program that prints the number of times the string 'bob' occurs in s. Fo
 Number of times bob occurs is: 2'''
 
 def main():
-	"Main Function"
+	"""Main Function"""
 	str_1 = input()
     str_2 = 'bob'
     cnt = 0
