@@ -2,7 +2,7 @@
 
 def main():
 	'''Main function.'''
-    data = ['2', '2']
+    data = ['2','2']
     print(int(data[0])+int(data[1]))
 
 if __name__ == "__main__":
