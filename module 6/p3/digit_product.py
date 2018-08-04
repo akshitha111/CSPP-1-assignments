@@ -9,6 +9,7 @@ for i in S:
     A = S%10
     S = S/10
     S = S%10
+    i += 1
 A = A * i
 print(A)
 
