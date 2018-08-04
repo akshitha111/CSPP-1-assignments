@@ -9,6 +9,7 @@ while i > 0:
     A = S%10
     S = S//10
     A = A * i
+i = i+1
 print(A)
 
 if __name__ == "__main__":
