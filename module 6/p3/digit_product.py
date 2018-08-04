@@ -10,8 +10,6 @@ while S > 0:
     S = S//10
     P = P * A
 print(P)
-if char in S == 0:
-    print("0")
 
 if __name__ == "__main__":
     main()
