@@ -5,7 +5,7 @@ def main():
     '''
 S = int(input())
 i = 1
-while i > 0:
+while S > 0:
     A = S%10
     S = S//10
     A = A * i
