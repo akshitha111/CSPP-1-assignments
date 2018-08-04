@@ -10,7 +10,7 @@ def main():
 str_input = input()
 str_output = ""
 for char in str_input:
-    if str_input == '!' or str_input == '@' or str_input == '#' or str_input == '$' or str_input == '%' or str_input == '^' or str_input == '&' or str_input == '*':
+    if char == '!' or char == '@' or char == '#' or char == '$' or char == '%' or char == '^' or char == '&' or char == '*':
             str_output = str_output + " "
     else:
         str_output = str_output + char
