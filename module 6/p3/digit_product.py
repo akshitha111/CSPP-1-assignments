@@ -3,11 +3,11 @@ def main():
     '''
     Read any number from the input, store it in variable int_input.
     '''
-i = int(input())
+S = int(input())
 P = 1
-while i > 0:
-    A = i%10
-    i = i//10
+while S > 0:
+    A = S%10
+    S = S//10
     P = P * A
 print(P)
 
