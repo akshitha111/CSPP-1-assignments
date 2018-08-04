@@ -5,13 +5,12 @@ def main():
     '''
 S = int(input())
 i = 1
-for i in S:
+while i > 0:
     A = S%10
-    S = S/10
-    S = S%10
-i += 1
-A = A * i
+    S = S//10
+    A = A * i
 print(A)
 
 if __name__ == "__main__":
     main()
+
