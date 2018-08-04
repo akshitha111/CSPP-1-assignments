@@ -9,7 +9,7 @@ for i in S:
     A = S%10
     S = S/10
     S = S%10
-    A = A * i
+A = A * i
 print(A)
 
 if __name__ == "__main__":
