@@ -29,7 +29,7 @@ E_N = 0.01
 G_S = A_I/2.0
 while abs(G_S*G_S - A_I) >= E_N:
     G_S = G_S - (((G_S**2) - A_I)/(2*G_S))
-    print(str(G_S))
+print(str(G_S))
 
 if __name__ == "__main__":
     main()
