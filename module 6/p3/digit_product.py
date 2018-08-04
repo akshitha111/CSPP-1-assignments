@@ -12,6 +12,7 @@ while S == 0:
     DI = S%10
     S = S//10
     P = P*DI
+    i += 1
 print(P)
 
 if __name__ == "__main__":

@@ -7,14 +7,14 @@ def main():
     '''
     Read string from the input, store it in variable str_input.
     '''
-str_input = input()
-str_output = ""
-for char in str_input:
+S = input()
+S_O = ""
+for char in S:
     if char == '!' or char == '@' or char == '#' or char == '$' or char == '%' or char == '^' or char == '&' or char == '*':
-            str_output = str_output + " "
+        S_O = S_O + " "
     else:
-        str_output = str_output + char
-print(str_output)
+        S_O = S_O + char
+print(S_O)
 
 if __name__ == "__main__":
     main()
