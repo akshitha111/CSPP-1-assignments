@@ -6,7 +6,7 @@ def is_word_guessed(secret_word, letters_guessed):
     count = 0
     for i in list_1:
         for j in letters_guessed:
-            if j == i:
+            if j >= i:
                 count = count+1
     return bool(count == length_1)
 def main():
@@ -24,4 +24,3 @@ def main():
     print(is_word_guessed(secret_word, list1))
 if __name__ == "__main__":
     main()
-    
