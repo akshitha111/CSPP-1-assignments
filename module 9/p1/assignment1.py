@@ -1,14 +1,10 @@
 """Guess word"""
 def is_word_guessed(secret_word, letters_guessed):
-    """Guess word"""
-    list_1 = list(secret_word)
-    length_1 = len(secret_word)
-    count = 0
-    for i in list_1:
-        for j in letters_guessed:
-            if j == i:
-                count = count+1
-    return bool(count == length_1)
+    """ guess word """
+    for i in secret_word:
+        if i not in letters_guessed:
+            return False
+    return True
 def main():
     """Guess word"""
     user_input = input()
