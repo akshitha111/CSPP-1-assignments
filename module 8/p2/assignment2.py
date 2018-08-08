@@ -1,15 +1,14 @@
-"""
-# Exercise: Assignment-2
-# This function takes in one number and returns one number.
-"""
+'''Sum of digits using recursion.'''
 def sumofdigits(n_1):
-    """ sum """
-    while n_1 > 0:
-        r_1 = n_1%10
-        return r_1+sumofdigits(n_1//10)
-    return 0
+    '''
+    n is positive Integer
+    returns: a positive integer, the sum of digits of n.
+    '''
+    if n_1 == 0:
+        return 0
+    return n_1%10+sumofdigits(n_1//10)
 def main():
-    """ sum """
+    '''Main Function.'''
     a_1 = input()
     print(sumofdigits(int(a_1)))
 if __name__ == "__main__":
