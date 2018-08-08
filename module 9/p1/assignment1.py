@@ -1,6 +1,6 @@
 """Guess word"""
 def is_word_guessed(secret_word, letters_guessed):
-    """guess"""
+    """Guess word"""
     list_1 = list(secret_word)
     length_1 = len(secret_word)
     count = 0
