@@ -1,4 +1,4 @@
-"""string"""
+"""secret word"""
 def get_guessed_word(secret_word, letters_guessed):
     """string"""
     list_1 = list(secret_word)
@@ -15,7 +15,7 @@ def get_guessed_word(secret_word, letters_guessed):
             astr = astr + '_'
     return astr
 def main():
-    """string"""
+    """ secret word """
     user_input = input()
     if user_input:
         data = user_input.split(" ")
