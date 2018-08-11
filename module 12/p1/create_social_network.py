@@ -44,7 +44,7 @@ def create_social_network(data):
             if result[0] not in string_dict:
                 string_dict[result[0]] = [result[1]]
                 print(string_dict)
-            elif result[1] not in string_dict[result[0]]:
+            elif result[0] not in string_dict[result[0]]:
                 string_dict[result[0]].append[result[1]]
                 print(string_dict)
     return string_dict
