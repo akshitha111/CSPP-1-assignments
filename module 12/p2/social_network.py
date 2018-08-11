@@ -14,14 +14,11 @@ def follow(network, arg1, arg2):
         update the network dictionary and return it
     '''
     # remove the pass below and start writing your code
-    network = {}
-    network.keys=[arg1,arg2]
-    if arg1 and arg2 in netwrok:
-        arg1[values] = arg1[values].append[arg2]
-        network = update.network
-    return network
-
-
+    for i in network:
+        a_1 = arg1 + arg2
+    if arg1 != arg2:
+        arg1.append(i)
+    return a_1
 
 def unfollow(network, arg1, arg2):
     '''
@@ -33,7 +30,11 @@ def unfollow(network, arg1, arg2):
         update the network dictionary and return it
     '''
     # remove the pass below and start writing your code
-    pass
+    for i in network:
+        b_1 = arg1 + arg2
+    if arg1 != arg2:
+        arg1.append(i)
+    return b_1
 
 def delete_person(network, arg1):
     '''
@@ -46,13 +47,14 @@ def delete_person(network, arg1):
         update the network dictionary and return it
     '''
     # remove the pass below and start writing your code
-    pass
+    for i in network:
+        arg1 = arg1 + i
 
 def main():
     '''
         handling testcase input and printing output
     '''
-    network = eval(input())
+    network = (input())
     lines = int(input())
     for i in range(lines):
         i += 1
