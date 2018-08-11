@@ -37,7 +37,7 @@ def create_social_network(data):
     # remove the pass below and start writing your code
     string_dict={}
     for i in data:
-        re = data.split('f')
+        re = data.split('','\n')
         print(re)
         if re[0] not in string_dict:
             string_dict[re[0]] = [re[1]]
