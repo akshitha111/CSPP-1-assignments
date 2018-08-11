@@ -14,7 +14,14 @@ def follow(network, arg1, arg2):
         update the network dictionary and return it
     '''
     # remove the pass below and start writing your code
-    pass
+    network = {}
+    network.keys=[arg1,arg2]
+    if arg1 and arg2 in netwrok:
+        arg1[values] = arg1[values].append[arg2]
+        network = update.network
+    return network
+
+
 
 def unfollow(network, arg1, arg2):
     '''

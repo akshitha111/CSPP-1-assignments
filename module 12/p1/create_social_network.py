@@ -1,9 +1,6 @@
 '''
     Assignment-1 Create Social Network
 '''
-
-
-
 def create_social_network(data):
     '''
         The data argument passed to the function is a string
@@ -32,18 +29,16 @@ def create_social_network(data):
         Error handling case:
         Return a empty dictionary if the string format of the data is invalid
         Empty dictionary is not None, it is a dictionary with no keys
-    '''
-
-    # remove the pass below and start writing your code
+    '''# remove the pass below and start writing your code
     string_dict={}
     for i in data:
         import re
-        result=re.split('follows \n',data)
-        print(result)
-        if result[0] not in string_dict:
-            string_dict[result[0]] = [result[1]]
-            print(string_dict)
-        elif result[1] not in string_dict[result[0]]:
+        result=re.split('follow \n',data)
+        for line in res:
+            if result[0] not in string_dict:
+                string_dict[result[0]] = [result[1]]
+                print(string_dict)
+            elif result[1] not in string_dict[result[0]]:
                 string_dict[result[0]].append[result[1]]
                 print(string_dict)
     return string_dict
