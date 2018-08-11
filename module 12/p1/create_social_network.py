@@ -37,14 +37,16 @@ def create_social_network(data):
     # remove the pass below and start writing your code
     string_dict={}
     for i in data:
-        re = data.split('\n')
-        print(re)
-        if re[0] not in string_dict:
-            string_dict[re[0]] = [re[1]]
-            print(string_dict)
-        elif re[1] not in string_dict[re[0]]:
-            string_dict[re[0]].append[re[1]]
-            print(string_dict)
+        import re
+        result=re.split('follows \n',data)
+        print(result)
+        for j in result:
+            if result[0] not in string_dict:
+                string_dict[result[0]] = [result[1]]
+                print(string_dict)
+            elif result[1] not in string_dict[result[0]]:
+                string_dict[result[0]].append[result[1]]
+                print(string_dict)
     return string_dict
 
 def main():

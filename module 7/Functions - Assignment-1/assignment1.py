@@ -1,4 +1,4 @@
-'''Calculatingpaying_debtoffinayear.'''
+''Calculatingpaying_debtoffinayear.'''
 def paying_debtoffinayear(balance_num, annual_interestrate, monthly_paymentrate):
     '''paying_debtoffinayear function.'''
     i = 0
