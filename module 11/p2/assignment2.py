@@ -5,7 +5,7 @@ def update_hand(hand_1, word_1):
     for i in word_1:
         if i in hand_1.keys():
             hand_new[i] = hand_new[i] - 1
-            return hand_new
+    return hand_new
 def main():
     """assignment 2"""
     n_1 = input()
