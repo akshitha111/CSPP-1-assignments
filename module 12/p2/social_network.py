@@ -16,8 +16,8 @@ def follow(network, arg1, arg2):
     # remove the pass below and start writing your code
     for i in network:
         a_1 = arg1 + arg2
-    if arg1 != arg2:
-        arg1.append(i)
+        if arg1 != arg2:
+            arg1.append(i)
     return a_1
 
 def unfollow(network, arg1, arg2):
@@ -32,8 +32,8 @@ def unfollow(network, arg1, arg2):
     # remove the pass below and start writing your code
     for i in network:
         b_1 = arg1 + arg2
-    if arg1 != arg2:
-        arg1.append(i)
+        if arg1 != arg2:
+            arg1.append(i)
     return b_1
 
 def delete_person(network, arg1):
