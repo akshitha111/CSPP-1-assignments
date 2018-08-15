@@ -16,10 +16,10 @@ def is_straight(hand):
     '''
     dic = {'A':14, '2':2, '3':3, '4':4, '5':5, '6':6,\
     '7':7, '8':8, '9':9, 'T':10, 'J':11, 'Q':12, 'K':13}
-    if all(True if i in "A2345" else False for i,v in hand):
+    if all(True if i in "A2345" else False for i, v in hand):
         return True
-    cards_list = set(["--23456789TJQKA".index(i) for i,v in hand])
-    return len(cards_list)==5 and max(cards_list)-min(cards_list)==4
+    cards_list = set(["--23456789TJQKA".index(i) for i, v in hand])
+    return len(cards_list) == 5 and max(cards_list)-min(cards_list) == 4
 
 def is_flush(hand):
     '''
@@ -90,7 +90,6 @@ def poker(hands):
     # hand_rank is a function passed to max
     # hand_rank takes a hand and returns its rank
     # max uses the rank returned by hand_rank and returns the best hand
-    print("My hands", hands)
     return max(hands, key=hand_rank)
 
 if __name__ == "__main__":
