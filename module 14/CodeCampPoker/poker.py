@@ -14,8 +14,8 @@ def is_straight(hand):
         Think of an algorithm: given the card face value how to check if it a straight
         Write the code for it and return True if it is a straight else return False
     '''
-    dic = {'A':14, '2':2, '3':3, '4':4, '5':5, '6':6,\
-    '7':7, '8':8, '9':9, 'T':10, 'J':11, 'Q':12, 'K':13}
+    #dic = {'A':14, '2':2, '3':3, '4':4, '5':5, '6':6,\
+    #'7':7, '8':8, '9':9, 'T':10, 'J':11, 'Q':12, 'K':13}
     if all(True if i in "A2345" else False for i, v in hand):
         return True
     cards_list = set(["--23456789TJQKA".index(i) for i, v in hand])
@@ -54,8 +54,7 @@ def hand_rank(hand):
     # Second character for the suit S (Spade), H (Heart), D (Diamond), C (Clubs)
     # What would be the logic to determine if a hand is a straight or flush?
     # Let's not think about the logic in the hand_rank function
-    # Instead break it down into two sub functions is_straight and is_flush
-  
+    # Instead break it down into two sub functions is_straight and is_flush  
     # check for straight, flush and straight flush
     # best hand of these 3 would be a straight flush with the return value 3
     # the second best would be a flush with the return value 2
@@ -80,9 +79,6 @@ def poker(hands):
 
         Output: Return the winning poker hand
     '''
-    
-
-
     # the line below may be new to you
     # max function is provided by python library
     # learn how it works, in particular the key argument, from the link
