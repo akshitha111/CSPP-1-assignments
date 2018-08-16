@@ -3,7 +3,12 @@
     Read about poker hands here.
     https://en.wikipedia.org/wiki/List_of_poker_hands
 '''
-
+def kind(face_values, num):
+    for face in face_values:
+        if face_values.count(face) == numreturn face
+def get_facevalues(hand):
+    return sorted(['--23456789TJQKA', index(face) for face, suite in hand], reverse = True)
+    
 def is_straight(hand):
     '''
         How do we find out if the given hand is a straight?
