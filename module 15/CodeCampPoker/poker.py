@@ -5,10 +5,10 @@
 '''
 def kind(face_values, num):
     for face in face_values:
-        if face_values.count(face) == numreturn face
+        if face_values.count(face) == num: return face
 def get_facevalues(hand):
     return sorted(['--23456789TJQKA', index(face) for face, suite in hand], reverse = True)
-    
+
 def is_straight(hand):
     '''
         How do we find out if the given hand is a straight?
