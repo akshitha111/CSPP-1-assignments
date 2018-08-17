@@ -5,14 +5,14 @@ import re
 import math
 def words_list(doc):
     word = doc.lower()
-    word = word.split("")
+    word = word.split(" ")
     words = []
     for w in word:
         words.append(w.strip())
         words1 = []
     regex = re.compile("[^a-z]")
     for w in words:
-        words1.append(regex.sub("",w))
+        words1.append(regex.sub(" ",w))
     return words1
 def remove_Stop_words(words,StopWords):
     words1 = []
