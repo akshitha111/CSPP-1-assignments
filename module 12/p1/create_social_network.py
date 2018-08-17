@@ -31,7 +31,7 @@ def create_social_network(data):
         Empty dictionary is not None, it is a dictionary with no keys
     '''# remove the pass below and start writing your code
     network = {}
-    elements = data.splitlines("\n")
+    elements = data.splitlines()
     for element in elements:
         line = element.split(" follows ")
         if line[0] not in network:
