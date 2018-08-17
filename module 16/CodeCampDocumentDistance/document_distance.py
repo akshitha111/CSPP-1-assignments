@@ -6,6 +6,10 @@ def similarity(dict1, dict2):
     '''
         Compute the document distance as given in the PDF
     '''
+    dict1 = ""
+    dict2 = ""
+    print(dict1)
+    print(dict2)
     document_distance = 0
     count = 0
     if i in dict1 and i in dict2:
