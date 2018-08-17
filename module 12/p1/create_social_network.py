@@ -32,7 +32,7 @@ def create_social_network(data):
     '''# remove the pass below and start writing your code
     network = {}
     elements = data.splitlines()
-    if len(elements)== 0:
+    if len(data)== 0:
         return network
     for element in elements:
         line = element.split(" follows ")
