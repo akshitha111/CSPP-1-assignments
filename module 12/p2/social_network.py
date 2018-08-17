@@ -18,7 +18,7 @@ def follow(network, arg1, arg2):
         network[arg1].append(arg2)
     else:
         network[arg1] = []
-        netwrok[arg1].append(arg2)
+        network[arg1].append(arg2)
     return network
 
 
@@ -32,7 +32,7 @@ def unfollow(network, arg1, arg2):
         update the network dictionary and return it
     '''
     # remove the pass below and start writing your code
-    if arg1 in network and arg2 are in network:
+    if arg1 in network and arg2 in network:
         if arg2 in network[arg1]:
             network[arg1].remove(arg2)
     return network
