@@ -14,7 +14,7 @@ def follow(network, arg1, arg2):
         update the network dictionary and return it
     '''
     # remove the pass below and start writing your code
-    network={}
+
     if arg1 in network:
         network[arg1].append(arg2)
     else:
@@ -59,7 +59,7 @@ def main():
     '''
         handling testcase input and printing output
     '''
-    network = (input())
+    network = eval(input())
     lines = int(input())
     for i in range(lines):
         i += 1
