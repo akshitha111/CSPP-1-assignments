@@ -23,6 +23,7 @@ def remove_Stop_words(words,StopWords):
 def createDictionary(dictionary,words,index):
     for w in words:
         if w not in dictionary.keys():
+            dictionary[w] = [0,0]
             dictionary[w][index] += 1
     return dictionary
 def compute(dictionary):
