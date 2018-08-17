@@ -34,8 +34,8 @@ def create_social_network(data):
     elements = data.splitlines()
     for elements in elements:
         line = element.split(" follows ")
-        if line[0] not in network:
-            return 
+        #if line[0] not in network:
+        #    return 
 
 
 
