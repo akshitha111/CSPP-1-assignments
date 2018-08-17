@@ -21,7 +21,7 @@ def remove_Stop_words(words,StopWords):
             words1.append(w)
     return words1
 def createDictionary(dictionary,words,index):
-    for w in words:
+    for w in word:
         if w not in dictionary.keys():
             dictionary[w] = [0,0]
             dictionary[w][index] += 1
@@ -37,9 +37,9 @@ def similarity(dict1, dict2):
     '''
     words_1 = words_list(dict1)
     words_2 = words_list(dict2)
-    StopWords = load_stopwords("StopWords.txt")
-    words_1 = remove_Stop_words(words_1, StopWords)
-    words_2 = remove_Stop_words(words_2, StopWords)
+    stopWords = load_stopwords("stopwords.txt")
+    words_1 = remove_Stop_words(words_1, stopWords)
+    words_2 = remove_Stop_words(words_2, stopWords)
     dictionary = dict()
     dictionary = createDictionary(dictionary,words_1,0)
     dictionary = createDictionary(dictionary,words_2,1)
