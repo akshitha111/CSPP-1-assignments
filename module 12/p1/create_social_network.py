@@ -37,6 +37,8 @@ def create_social_network(data):
         if line[0] not in network:
             network[line[0]]= line[1].split(",")
 
+    return network
+
 
 
 def main():
