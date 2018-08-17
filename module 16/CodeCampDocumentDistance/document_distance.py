@@ -8,7 +8,7 @@ def similarity(dict1, dict2):
     '''
     document_distance = 0
     count = 0
-    if word in dict1 and word in dict2:
+    if each in dict1 and dict2:
         count = count+1
         return count
     return 0
