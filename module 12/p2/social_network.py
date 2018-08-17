@@ -21,7 +21,6 @@ def follow(network, arg1, arg2):
         lst = []
         lst.append(arg2)
         network[arg1] = lst
-        network[arg1].append(arg2)
     return network
 
 
