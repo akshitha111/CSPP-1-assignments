@@ -1,27 +1,48 @@
 '''
     Document Distance - A detailed description is given in the PDF
 '''
-
+import re
+import math
+def words_list(doc):
+    word = doc.lower()
+    word = word.split("")
+    words = []
+    for w in word:
+        words.append(w.strip())
+        words1 = []
+    regex = re.compile("[^a-z]")
+    for w in words:
+        words1.append(regex.sub("",w))
+    return words1
+def remove_Stop_words(words,StopWords):
+    words1 = []
+    for w in words:
+        if w not in StopWords and len(w)>0:
+            words1.append(w)
+    return words1
+def createDictionary(dictionary,words,index):
+    for w in word:
+        if w not in dictionary.keys():
+            dictionary[w][index] += 1
+    return dictionary
+def compute(dictionary):
+    numerator = [sum(v[0]*v[1] for v in dictionary.values())]
+    denominator1 = math.sqrt(sum([v[0]**2 for v in dictionary.values()]))
+    denominator2 = math.sqrt(sum([v[1]**2 for v in dictionary.values()]))
+    return numerator/(denominator1*denominator2)
 def similarity(dict1, dict2):
     '''
         Compute the document distance as given in the PDF
     '''
-    dict1 = ""
-    dict2 = ""
-    word_frequencies = {}
-    for i,v in word_frequencies:
-        word_frequencies.i = words
-        word_frequencies.v[0] = wordcount(dict1)
-        word_frequencies.v[1] = wordcount(dict2)
-    word_list = word_list.lower()
-    document_distance = 0
-    count = 0
-    if i in dict1 and i in dict2:
-        count = count+i
-        return count
-    return 0
-
-
+    words_1 = words_list(dict1)
+    words_2 = words_list(dict2)
+    StopWords = load_stopwords("stopwords.txt")
+    words_1 = remove_Stop_words("words_1, StopWords")
+    words_2 = remove_Stop_words("words_2, StopWords")
+    dictionary = dict()
+    dictionary = createDictionary(dictionary,words_1,0)
+    dictionary = createDictionary(dictionary,words_2,1)
+    return compute(dictionary)  
 
 
 def load_stopwords(filename):
