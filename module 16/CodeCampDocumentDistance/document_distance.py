@@ -8,8 +8,8 @@ def similarity(dict1, dict2):
     '''
     document_distance = 0
     count = 0
-    if each in dict1 and dict2:
-        count = count+1
+    if i in dict1 and i in dict2:
+        count = count+i
         return count
     return 0
 
