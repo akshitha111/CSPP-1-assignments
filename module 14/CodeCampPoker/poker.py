@@ -69,6 +69,7 @@ def hand_rank(hand):
     if is_flush(hand):
         max = 2
     return max
+    return 1
 
 def poker(hands):
     '''
