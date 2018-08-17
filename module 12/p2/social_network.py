@@ -52,7 +52,10 @@ def delete_person(network, arg1):
     '''
     # remove the pass below and start writing your code
     if arg1 in network:
-        del network[arg1]
+        n = dict(network)
+        del n[arg1]
+        return n
+
     return network
     
 
