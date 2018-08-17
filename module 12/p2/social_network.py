@@ -18,8 +18,10 @@ def follow(network, arg1, arg2):
     if arg1 in network:
         network[arg1].append(arg2)
     else:
-        network[arg1] = []
-        network[arg1].append(arg2)
+        lst = []
+        lst.append(arg2)
+        network[arg1] = lst
+
     return network
 
 
