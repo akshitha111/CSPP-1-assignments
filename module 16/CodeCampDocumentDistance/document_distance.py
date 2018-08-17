@@ -8,8 +8,12 @@ def similarity(dict1, dict2):
     '''
     dict1 = ""
     dict2 = ""
-    print(dict1)
-    print(dict2)
+    word_frequencies = {}
+    for i,v in word_frequencies:
+        word_frequencies.i = words
+        word_frequencies.v[0] = wordcount(dict1)
+        word_frequencies.v[1] = wordcount(dict2)
+    word_list = word_list.lower()
     document_distance = 0
     count = 0
     if i in dict1 and i in dict2:
