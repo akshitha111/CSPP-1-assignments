@@ -38,7 +38,7 @@ def similarity(dict1, dict2):
     words_2 = words_list(dict2)
     StopWords = load_stopwords("StopWords.txt")
     words_1 = remove_Stop_words(words_1, StopWords)
-    words_2 = remove_Stop_words("words_2, StopWords")
+    words_2 = remove_Stop_words(words_2, StopWords)
     dictionary = dict()
     dictionary = createDictionary(dictionary,words_1,0)
     dictionary = createDictionary(dictionary,words_2,1)
