@@ -39,7 +39,7 @@ def search(search_index, query):
     '''
     query_sent = []
     for i in query:
-        list_1 = i.split("")
+        list_1 = i.split(" ")
         query_sent.append(list_1)
     for i in query_sent:
         a_empty=[]
