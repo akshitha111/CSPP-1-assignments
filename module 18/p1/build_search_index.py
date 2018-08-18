@@ -23,6 +23,8 @@
 
 # helper function to load the stop words from a file
 import re
+word = []
+words = []
 def load_stopwords(filename):
     '''
         loads stop words from a file and returns a dictionary
@@ -42,9 +44,11 @@ def word_list(text):
     '''
     word = text.lower()
     word = text.split(" ")
+    for w_1 in word:
+        words.append(w_1.strip())
     regex = re.compile("[^a-z]")
-    for w in words:
-        words.append(regex.sub("", w))
+    for w_1 in words:
+        words.append(regex.sub("", w_1))
     return words
 
 
@@ -58,17 +62,16 @@ def build_search_index(docs):
     search_index = {}
 
     # iterate through all the docs
-    for i in dict1:
+    for i in docs:
         doc_id = word.index(i)
+        return doc_id
     # keep track of doc_id which is the list index corresponding the document
     # hint: use enumerate to obtain the list index in the for loop
-        enumerate(i)
-
-        # clean up doc and tokenize to words list
+            # clean up doc and tokenize to words list
 
 
         # add or update the words of the doc to the search index
-        search_index += words
+    search_index += words
 
     # return search index
     return search_index
