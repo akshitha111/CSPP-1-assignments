@@ -43,9 +43,9 @@ def search(search_index, query):
         query_sent.append(list_1)
     for i in query_sent:
         a_empty = []
-    for j in i:
-        k = 0
-        b_empty = []
+        for j in i:
+            k = 0
+            b_empty = []
     for j in search_index:
         b_empty = search_index[j]
         while k < len(b_empty):
@@ -61,7 +61,7 @@ def process_queries(search_index, queries):
         iterate through all the queries and call the search function
         print the results returned by search function
     '''
-search(search_index, queries)
+    search(search_index, queries)
 
 def main():
     '''
