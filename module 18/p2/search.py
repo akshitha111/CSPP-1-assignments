@@ -40,7 +40,7 @@ def search(search_index, query):
     doc_id = set()
     query = query.lower().split(" ")
     for word in query:
-        if word in search_index.keys():
+        if word in search_index:
             for i in search_index[word]:
                 doc_id.add(i[0])
     return doc_id
