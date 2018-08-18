@@ -63,7 +63,7 @@ def build_search_index(docs):
     print("docs", docs)
     for i in docs:
         doc_id = docs.index(i)
-        print(i)
+        print(doc_id)
     # keep track of doc_id which is the list index corresponding the document
     # hint: use enumerate to obtain the list index in the for loop
             # clean up doc and tokenize to words list
