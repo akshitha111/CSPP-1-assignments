@@ -42,13 +42,13 @@ def search(search_index, query):
         list_1 = i.split(" ")
         query_sent.append(list_1)
     for i in query_sent:
-        a_empty=[]
+        a_empty = []
         for j in i:
             k = 0
-            b_empty=[]
+            b_empty = []
             for j in search_index:
-                b_empty=search_index[j]
-                while k<len(b_empty):
+                b_empty = search_index[j]
+                while k < len(b_empty):
                     a_empty.append(search_index[j][k][0])
                     k = k+1
     print(set(a_empty))
