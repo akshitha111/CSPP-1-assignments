@@ -63,7 +63,14 @@ def build_search_index(docs):
     print("docs", docs)
     for i in docs:
         doc_id = docs.index(i)
-        print(doc_id)
+        wordslist = word_list(i)
+        for word in wordslist:
+            if word not in search_index:
+                search_index[word] = [ (doc_id,wordslist.count(word))]
+            else:
+                search_index[word].append([ (doc_id,wordslist.count(word))])
+    return search_index
+
     # keep track of doc_id which is the list index corresponding the document
     # hint: use enumerate to obtain the list index in the for loop
             # clean up doc and tokenize to words list
