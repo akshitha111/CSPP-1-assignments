@@ -61,10 +61,7 @@ def process_queries(search_index, queries):
         iterate through all the queries and call the search function
         print the results returned by search function
     '''
-    queries_sent = []
-    queries_sent = queries
-    for i in queries_sent:
-        search(search_index(i), queries_sent)
+    search(search_index_queries)
 
 def main():
     '''
