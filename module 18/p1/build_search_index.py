@@ -74,6 +74,9 @@ def build_search_index(docs):
             if word not in search_index:
                 search_index[word] = [ (doc_id,wordslist.count(word))]
             else:
+                for i in search_index[word]:
+                    if doc_id in wordslist:
+                        continue;
                 search_index[word].append( (doc_id,wordslist.count(word)))
     return search_index
 
