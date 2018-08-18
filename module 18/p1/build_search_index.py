@@ -76,8 +76,9 @@ def build_search_index(docs):
             else:
                 for i in search_index[word]:
                     if doc_id in i:
+                        print(i,word)
                         continue;
-                search_index[word].append( (doc_id,wordslist.count(word)))
+                search_index[word].append((doc_id,wordslist.count(word)))
     return search_index
 
     # keep track of doc_id which is the list index corresponding the document
