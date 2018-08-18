@@ -40,6 +40,7 @@ def search(search_index, query):
     str = query.lower()
     for word in search_index:
          word = word.append(search_index(values))
+    print("set()")
 
 def process_queries(search_index, queries):
     '''

@@ -65,7 +65,7 @@ def build_search_index(docs):
         enumerate(i)
 
         # clean up doc and tokenize to words list
-        
+
 
         # add or update the words of the doc to the search index
         search_index += words
