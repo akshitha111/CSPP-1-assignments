@@ -40,14 +40,20 @@ def word_list(text):
         Change case to lower and split the words using a SPACE
         Clean up the text by remvoing all the non alphabet characters
         return a list of words
+
     '''
+    stopword = load_stopwords("stopwords.txt")
     word = []
     text = text.lower()
     text = text.split(" ")
     regex = re.compile("[^a-z]")
     for word1 in text:
         word.append(regex.sub("", word1))
-    return word
+    finallist = []
+    for i in word:
+        if i not in stopword:
+            finallist.append(i)
+    return finallist
 
 
 
@@ -60,7 +66,7 @@ def build_search_index(docs):
     search_index = {}
 
     # iterate through all the docs
-    print("docs", docs)
+    # print("docs", docs)
     for i in docs:
         doc_id = docs.index(i)
         wordslist = word_list(i)
