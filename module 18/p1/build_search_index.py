@@ -55,7 +55,7 @@ def build_search_index(docs):
     '''
 
     # initialize a search index (an empty dictionary)
-    dict1 = {}
+    search_index = {}
 
     # iterate through all the docs
     for i in dict1:
@@ -65,11 +65,13 @@ def build_search_index(docs):
         enumerate(i)
 
         # clean up doc and tokenize to words list
+        
 
         # add or update the words of the doc to the search index
+        search_index += words
 
     # return search index
-    pass
+    return search_index
 
 # helper function to print the search index
 # use this to verify how the search index looks
