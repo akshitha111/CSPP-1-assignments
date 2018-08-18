@@ -45,8 +45,8 @@ def word_list(text):
     text = text.lower()
     text = text.split(" ")
     regex = re.compile("[^a-z]")
-    for word in text:
-        word.append(regex.sub("", w))
+    for word1 in text:
+        word.append(regex.sub("", word1))
     return word
 
 
