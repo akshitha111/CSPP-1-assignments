@@ -60,8 +60,9 @@ def build_search_index(docs):
     search_index = {}
 
     # iterate through all the docs
+    print("docs", docs)
     for i in docs:
-        doc_id = word.index(i)
+        doc_id = docs.index(i)
         print(i)
     # keep track of doc_id which is the list index corresponding the document
     # hint: use enumerate to obtain the list index in the for loop
