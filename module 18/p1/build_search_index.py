@@ -74,11 +74,13 @@ def build_search_index(docs):
             if word not in search_index:
                 search_index[word] = [ (doc_id,wordslist.count(word))]
             else:
+                flag = True
                 for i in search_index[word]:
                     if doc_id in i:
-                        print(i,word)
+                        flag = False
                         break
-                search_index[word].append((doc_id,wordslist.count(word)))
+                if(flag):
+                    search_index[word].append((doc_id,wordslist.count(word)))
     return search_index
 
     # keep track of doc_id which is the list index corresponding the document
