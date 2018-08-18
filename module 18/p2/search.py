@@ -38,10 +38,22 @@ def search(search_index, query):
         make a set of doc_id and return
     '''
     query_sent = []
-    word = []
-    query_sent = query.split()
-    if word in search_index:
-        print(query_sent)
+    for i in query:
+        list_1 = i.split("")
+        query_sent.append(list_1)
+    for i in query_sent:
+        a_empty=[]
+        for j in i:
+            k = 0
+            b_empty=[]
+            for j in search_index:
+                b_empty=search_index[j]
+                while k<len(b_empty):
+                    a_empty.append(search_index[j][k][0])
+                        k = k+1
+    print(set(a_empty)
+
+
 
 def process_queries(search_index, queries):
     '''
@@ -50,7 +62,6 @@ def process_queries(search_index, queries):
         print the results returned by search function
     '''
     queries_sent = []
-    #query_sent = []
     queries_sent = queries
     for i in queries_sent:
         search(search_index(i), queries_sent)
