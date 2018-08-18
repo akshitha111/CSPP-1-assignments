@@ -24,7 +24,6 @@
 # helper function to load the stop words from a file
 import re
 word = []
-words = []
 def load_stopwords(filename):
     '''
         loads stop words from a file and returns a dictionary
@@ -42,14 +41,13 @@ def word_list(text):
         Clean up the text by remvoing all the non alphabet characters
         return a list of words
     '''
-    word = text.lower()
-    word = text.split(" ")
-    for w_1 in word:
-        words.append(w_1.strip())
+    word = []
+    text = text.lower()
+    text = text.split(" ")
     regex = re.compile("[^a-z]")
-    for w_1 in words:
-        words.append(regex.sub("", w_1))
-    return words
+    for word in text:
+        word.append(regex.sub("", w))
+    return word
 
 
 
@@ -64,17 +62,18 @@ def build_search_index(docs):
     # iterate through all the docs
     for i in docs:
         doc_id = word.index(i)
-        return doc_id
+        print(i)
     # keep track of doc_id which is the list index corresponding the document
     # hint: use enumerate to obtain the list index in the for loop
             # clean up doc and tokenize to words list
+            # enumerate
 
 
         # add or update the words of the doc to the search index
-    search_index += words
+    # search_index += words
 
-    # return search index
-    return search_index
+    # # return search index
+    # return search_index
 
 # helper function to print the search index
 # use this to verify how the search index looks
