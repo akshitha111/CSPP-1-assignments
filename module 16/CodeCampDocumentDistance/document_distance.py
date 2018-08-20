@@ -8,24 +8,24 @@ def words_list(doc):
     word = doc.lower()
     word = word.split(" ")
     words = []
-    for w_1 in word:
+    for w in word:
         words.append(w.strip())
         words1 = []
     regex = re.compile("[^a-z]")
-    for w_1 in words:
+    for w in words:
         words1.append(regex.sub("", w))
     return words1
 def remove_Stop_words(words, StopWords):
     words1 = []
-    for w_1 in words:
-        if w_1 not in StopWords and len(w_1) > 0:
+    for w in words:
+        if w not in StopWords and len(w) > 0:
             words1.append(w)
     return words1
 def createDictionary(dictionary, words, index):
-    for w_1 in words:
-        if w_1 not in dictionary.keys():
-            dictionary[w_1] = [0, 0]
-        dictionary[w_1][index] += 1
+    for w in words:
+        if w not in dictionary.keys():
+            dictionary[w] = [0, 0]
+        dictionary[w][index] += 1
     return dictionary
 def compute(dictionary):
     numerator = sum([v[0]*v[1] for v in dictionary.values()])
