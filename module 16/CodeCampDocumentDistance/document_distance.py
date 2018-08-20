@@ -4,6 +4,7 @@
 import re
 import math
 def words_list(doc):
+    """ document distance """
     word = doc.lower()
     word = word.split(" ")
     words = []
@@ -17,7 +18,7 @@ def words_list(doc):
 def remove_Stop_words(words, StopWords):
     words1 = []
     for w in words:
-        if w not in StopWords and len(w)> 0:
+        if w not in StopWords and len(w) > 0:
             words1.append(w)
     return words1
 def createDictionary(dictionary, words, index):
