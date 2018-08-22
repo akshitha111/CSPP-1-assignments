@@ -13,11 +13,11 @@ def main():
         A = S%10
         S = S//10
         P = P * A
-    return -P if t==1 else P
-# if t = 1:
-#   P = -P
-# else: 
-# print(P)
+    # return -P if t==1 else P
+    if t == 1:
+      return -P
+    else: 
+        return P
 
 if __name__ == "__main__":
     main()
