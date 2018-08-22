@@ -3,23 +3,23 @@ def main():
     '''
     Read any number from the input, store it in variable int_input.
     '''
-    S = int(input())
-    P = 1
-    t = 0
-    if S < 0:
-        t = 1
-        S = -S
-    if S == 0:
-        P = 0
-    while S != 0:
-        A = S%10
-        S = S//10
-        P = P * A
-    # return -P if t==1 else P
-    if t == 1:
-        print(-P)
-    else: 
-        print(P)
+    s_inp = int(input())
+    product = 1
+    temp = 0
+    if s_inp < 0:
+        temp = 1
+        s_inp = -s_inp
+    if s_inp == 0:
+        product = 0
+    while s_inp != 0:
+        rem = s_inp%10
+        s_inp = s_inp//10
+        product = product * rem
+    # return -product if t==1 else product
+    if temp == 1:
+        print(-product)
+    else:
+        print(product)
 
 if __name__ == "__main__":
     main()
