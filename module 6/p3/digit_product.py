@@ -9,7 +9,7 @@ def main():
     if S < 0:
         t = 1
         S = -S
-    while S > 0:
+    while S != 0:
         A = S%10
         S = S//10
         P = P * A
