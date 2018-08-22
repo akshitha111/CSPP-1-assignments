@@ -15,9 +15,9 @@ def main():
         P = P * A
     # return -P if t==1 else P
     if t == 1:
-      return -P
+        print(-P)
     else: 
-        return P
+        print(P)
 
 if __name__ == "__main__":
     main()
