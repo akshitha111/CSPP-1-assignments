@@ -55,7 +55,7 @@ def read_matrix():
     rows,columns = [int(i) for i in input().split(",")]
     matrix = []
     for i in range(rows):
-        lst = ([int(i) for i in input().split(" ")])
+        lst = [int(i) for i in input().split(" ")]
         if len(lst) != columns:
             print("Error: Invalid input for the matrix")
             return None
