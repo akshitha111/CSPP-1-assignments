@@ -65,7 +65,7 @@ def read_matrix():
 def main():
     # read matrix 1
     matrix_1 = read_matrix()
-    matrix_2 = read_matrix
+    matrix_2 = read_matrix()
 
     # read matrix 2
 
