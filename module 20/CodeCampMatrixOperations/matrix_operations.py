@@ -7,7 +7,7 @@ def mult_matrix(m1, m2):
         error message should be "Error: Matrix shapes invalid for mult"
     '''
     result = []
-    if(len(m1[0]) == len(m2)):
+    if len(m1[0]) == len(m2):
         for i in range(len(m1)):
             resTemp =[]
             for j in range(len(m2[0])):
@@ -71,8 +71,8 @@ def main():
 
     # add matrix 1 and matrix 2
     if(matrix_1 != None and matrix_2 != None):
-        print(add_matrix(matrix_1,matrix_2))
-        print(mult_matrix(matrix_1,matrix_2))
+        print(add_matrix(matrix_1, matrix_2))
+        print(mult_matrix(matrix_1, matrix_2))
 
     # multiply matrix 1 and matrix 2
     
