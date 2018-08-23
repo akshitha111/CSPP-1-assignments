@@ -36,13 +36,13 @@ def add_matrix(m1, m2):
         if len(i) != len(j):
             print("Error: Matrix shapes invalid for addition")
             return 
-        result = []
-        for i,j in zip(m1,m2):
-            row = []
-            for p,q in zip(i,j):
-                row.append(p+q)
-            result.append(row)
-        return result
+    result = []
+    for i,j in zip(m1,m2):
+        row = []
+        for p,q in zip(i,j):
+            row.append(p+q)
+        result.append(row)
+    return result
 
 def read_matrix():
     '''
