@@ -53,14 +53,14 @@ def read_matrix():
         error message should be "Error: Invalid input for the matrix"
     '''
     rows,columns = [int(i) for i in input().split(",")]
-    matrix = []
+    matrix_1 = []
     for i in range(rows):
         lst = [int(i) for i in input().split(" ")]
         if len(lst) != columns:
             print("Error: Invalid input for the matrix")
             return None
-        matrix.append(lst)
-    return matrix
+        matrix_1.append(lst)
+    return matrix_1
 
 def main():
     # read matrix 1
