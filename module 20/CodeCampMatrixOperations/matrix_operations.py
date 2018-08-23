@@ -26,7 +26,11 @@ def read_matrix():
         print an error message and return None
         error message should be "Error: Invalid input for the matrix"
     '''
-    pass
+    list_of_lists = []
+    for line in matrix:
+        new_list = [int(elem) for elem in line.split()]
+        list_of_lists.append(new_list)
+    return list_of_lists
 
 def main():
     # read matrix 1
@@ -36,7 +40,11 @@ def main():
     # add matrix 1 and matrix 2
 
     # multiply matrix 1 and matrix 2
-    pass
+    #matrix 1 = input()
+    #matrix 2 = input()
+    #matrix 3 = matrix 1 + matrix 2
+    #matrix 4 = matrix 1 * matrix 2
 
-if __name__ == '__main__':
-    main()
+
+    if __name__ == '__main__':
+        main()
