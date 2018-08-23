@@ -14,9 +14,9 @@ def mult_matrix(m1, m2):
                 res = 0
                 for k in range(len(m2)):
                     res += m1[i][k] * m2[k][j]
-                    resTemp.append(res)
-                result.append(resTemp)
-                return result
+                resTemp.append(res)
+            result.append(resTemp)
+        return result
     else:
         print("Error: Matrix shapes invalid for addition")
         return None
