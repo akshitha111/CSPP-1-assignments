@@ -13,6 +13,10 @@ def CheckGame(matrix):
 				count_o += 1
 			elif i == 'x':
 				count_x += 1
+	if abs(count_o-count_x == 1) or abs(count_0-count_x == 0):
+		return True
+	return False
+
 def rows(matrix):
 	winner_x = False
 	winner_o = False
