@@ -62,11 +62,11 @@ def diagonals(matrix):
 	return (False,0)
 def checkWinner(matrix):
 	if row(matrix)[0]:
-		print(row(matrix[1]))
+		print(rows(matrix)[1])
 	elif column(matrix)[0]:
 		print(column(matrix)[1])
-	elif diagonal(matrix)[0]:
-		print(diagonals)
+	elif diagonals(matrix)[0]:
+		print(diagonals)(matrix)[1]
 	else:
 		print("draw")
 
