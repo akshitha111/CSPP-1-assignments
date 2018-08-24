@@ -80,7 +80,7 @@ def main():
 		lst = input().split(" ")
 		matrix.append(lst)
 		i = i + 1
-		print(matrix)
+		#print(matrix)
 	if checkInput(matrix):
 		if checkGame(matrix):
 			checkWinner(matrix)
