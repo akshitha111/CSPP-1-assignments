@@ -35,13 +35,13 @@ def rows(matrix):
 	return (False,0)
 
 def column(matrix):
-	transpose = []
+	transPose = []
 	for i in range(len(matrix)):
 		row = []
 		for j in range(len(matrix[0])):
 			row.append(matrix[j][i])
-		transpose.append(row)
-	return rows(transpose)
+		transPose.append(row)
+	return rows(transPose)
 def diagonals(matrix):
 	d1 = []
 	for i in range(len(matrix)):
@@ -56,9 +56,9 @@ def diagonals(matrix):
 		d2.append(matrix[i][j])
 		j = j-1
 	if d2.count("o") == 3:
-		return
+		return (True,"o")
 	if d2.count("x") == 3:
-		return
+		return (True,"x")
 	return (False,0)
 def checkWinner(matrix):
 	if row(matrix)[0]:
