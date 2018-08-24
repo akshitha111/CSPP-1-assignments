@@ -1,9 +1,3 @@
-def checkInput(matrix):
-	for i in matrix:
-		for j in i:
-			if j not in "o x .":
-				return False
-	return True
 def CheckGame(matrix):
 	count_o = 0
 	count_x = 0
@@ -16,21 +10,30 @@ def CheckGame(matrix):
 	if abs(count_o-count_x == 1) or abs(count_0-count_x == 0):
 		return True
 	return False
+def checkInput(matrix):
+	for i in matrix:
+		for j in i:
+			if j not in "o x .":
+				return False
+	return True
 
 def rows(matrix):
-	winner_x = False
-	winner_o = False
-	if row.count("x") == 3:
-		winner_x = True
-	if row.count("o") == 3:
-		winner_o = True
+	winner_x=False
+	winner_o=False
+	for row in matrix:
+		if row.count("x")==3:
+			winner_x =True	
+		if row.count("o")==3:
+			winner_o =True
 	if winner_o and winner_x:
-		print("invalid game")
-		exit()
+	    print("invalid game")
+	    exit()
 	if winner_x:
 		return (True,"x")
 	if winner_o:
 		return (True,"o")
+	return (False,0)
+
 def column(matrix):
 	transpose = []
 	for i in range(len(matrix)):
@@ -39,7 +42,7 @@ def column(matrix):
 			row.append(matrix[j][i])
 		transpose.append(row)
 	return rows(transpose)
-def diagonal(matrix):
+def diagonals(matrix):
 	d1 = []
 	for i in range(len(matrix)):
 		d1.append[matrix[i][i]]
@@ -57,7 +60,15 @@ def diagonal(matrix):
 	if d2.count("x") == 3:
 		return
 	return (False,0)
-
+def checkWinner(matrix):
+	if row(matrix)[0]:
+		print(row(matrix[1]))
+	elif column(matrix)[0]:
+		print(column(matrix)[1])
+	elif diagonal(matrix)[0]:
+		print(diagonals)
+	else:
+		print("draw")
 
 
 
@@ -70,8 +81,9 @@ def main():
 		matrix.append(lst)
 		i = i + 1
 		print(matrix)
+	if checkInput(matrix):
 		if checkGame(matrix):
-			checkWinner
+			checkWinner(matrix)
 		else:
 			print("Invalid game")
 	if checkInput(matrix):
