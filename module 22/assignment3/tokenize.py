@@ -11,7 +11,7 @@ def tokenize(string):
             my_dict[item] = item.count(item)
         print(my_dict)
 
-        word_count(input())
+        print(word_count(input()))
 
     
          
