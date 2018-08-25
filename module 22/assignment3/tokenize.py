@@ -20,6 +20,6 @@ def main():
     input1 = ""
     for _ in range(num):
         input1 += input()
-    print(tokenize(''))
+    return (tokenize(''))
 if __name__ == '__main__':
     main()
