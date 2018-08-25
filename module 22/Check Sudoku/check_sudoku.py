@@ -13,30 +13,23 @@ def check_sudoku(sudoku):
         Your solution goes here. You may add other helper functions as needed.
         The function has to return True for a valid sudoku grid and false otherwise
     '''
-    
-    
     for i in range(9):
         if i is '0' and '1' and '2' and '3' and '4' and '5' and '6' and '7' and '8' and '9':
             print(True)
         return False
-
 def main():
     '''
         main function to read input sudoku from console
         call check_sudoku function and print the result to console
     '''
-    
     # initialize empty list
     sudoku = []
-
     # loop to read 9 lines of input from console
     for i in range(9):
         # read a line, split it on SPACE and append row to list
         row = input().split(' ')
         sudoku.append(row)
     # call solution function and print result to console
-    print(check_sudoku(sudoku))
-    
-
+    print(check_sudoku(sudoku))  
 if __name__ == '__main__':
     main()
