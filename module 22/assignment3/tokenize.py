@@ -18,9 +18,5 @@ def main():
     for _ in range(num):
         input1 += input()
     print(tokenize(''))
-
-    
-
-
 if __name__ == '__main__':
     main()
