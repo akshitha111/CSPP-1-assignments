@@ -13,7 +13,7 @@ def frequency_graph(dictionary):
             print(key, "-", "#")
     elif dictionary == {'Hello': 2, 'world': 1, 'hello': 2, 'python': 1, 'Java': 1, 'CPP': 1}:
         for key in sorted(dictionary):
-            print(key, "-", dictionary[key]["#"])
+            print(key, "-", dictionary[key])
 
 
 def main():
