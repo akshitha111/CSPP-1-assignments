@@ -5,7 +5,12 @@ the key and frequency with a SPACE - SPACE.
 '''
 
 def print_dictionary(dictionary):
-    pass
+    with open('~/Desktop/file') as f:
+    	words = f.read()
+        wordfreq = {}
+    for word in words.replace(',', ' ').split():
+        wordfreq[word] = wordfreq.setdefault(word, 0) + 1
+print wordfreq
 
 def main():
     dictionary = eval(input())

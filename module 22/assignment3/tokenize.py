@@ -4,10 +4,22 @@ each word
 '''
 
 def tokenize(string):
-    pass
-            
-def main():
-    pass
+    dict = {}
+    s = int(input())
+    count = 0
+    for i in range(s):
+        i = str(input())
+        for j in i:
+            count += 1
+        print(count)
 
-if __name__ == '__main__':
-    main()
+    
+
+    
+            
+#def main():
+    
+
+
+#if __name__ == '__main__':
+    #main()
