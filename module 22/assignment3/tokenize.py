@@ -8,10 +8,11 @@ def tokenize(string):
         my_string = string.lower().split()
         my_dict = {}
         for item in my_string:
-            my_dict[item] = item.count(item)
-        print(my_dict)
-
-        return word_count(input())
+            if item in my_dict:
+                my_dict[item] += 1
+            else:
+                my_dict[item] = 1
+    print(my_dict)
 
     
          
