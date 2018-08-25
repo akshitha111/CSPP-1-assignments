@@ -16,7 +16,7 @@ def check_sudoku(sudoku):
     #row = input()
     
     for i in range(9):
-        if i in '0' and '1' and '2' and '3' and '4' and '5' and '6' and '7' and '8' and '9':
+        if i is '0' and '1' and '2' and '3' and '4' and '5' and '6' and '7' and '8' and '9':
             print(True)
         return False
 
