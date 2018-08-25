@@ -11,6 +11,6 @@ def main():
     input1 = ""
     for _ in range(num):
         input1 += input()
-    print(tokenize(''))
+    #print(tokenize(''))
 if __name__ == '__main__':
     main()
