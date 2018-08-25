@@ -4,6 +4,7 @@ each word
 '''
 #import re
 def tokenize(string):
+    """ token """
     def word_count(string):
         my_string = string.lower().split()
         my_dict = {}
@@ -12,11 +13,9 @@ def tokenize(string):
                 my_dict[item] += 1
             else:
                 my_dict[item] = 1
-    print(my_dict)
-
-    
-         
+    print(my_dict)  
 def main():
+    """ token """
     num = int(input())
     input1 = ""
     for _ in range(num):
