@@ -14,7 +14,8 @@ def check_sudoku(sudoku):
         The function has to return True for a valid sudoku grid and false otherwise
     '''
     for i in range(9):
-        if i is '0' and '1' and '2' and '3' and '4' and '5' and '6' and '7' and '8' and '9':
+        if i is '0' and '1' and '2' and '3' and '4' and\
+         '5' and '6' and '7' and '8' and '9':
             print(True)
         return False
 def main():
@@ -30,6 +31,6 @@ def main():
         row = input().split(' ')
         sudoku.append(row)
     # call solution function and print result to console
-    print(check_sudoku(sudoku))  
+    print(check_sudoku(sudoku))
 if __name__ == '__main__':
     main()
