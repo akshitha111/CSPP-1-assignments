@@ -12,7 +12,7 @@ def tokenize(string):
                 my_dict[item] += 1
             else:
                 my_dict[item] = 1
-    print(my_dict)
+        print(my_dict)
 
     
          
