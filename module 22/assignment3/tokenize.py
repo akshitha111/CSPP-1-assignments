@@ -11,10 +11,7 @@ def tokenize(string):
     for word in input1:
         dict1[word] = input1.count(word)
     return dict1
-    
-
-    
-            
+         
 def main():
     num = int(input())
     input1 = ""
@@ -25,5 +22,5 @@ def main():
     
 
 
-#if __name__ == '__main__':
-    #main()
+if __name__ == '__main__':
+    main()
