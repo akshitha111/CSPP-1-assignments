@@ -3,7 +3,16 @@ Write a function to tokenize a given string and return a dictionary with the fre
 each word
 '''
 #import re
-#def tokenize(string):
+def tokenize(string):
+    def word_count(string):
+        my_string = string.lower().split()
+        my_dict = {}
+        for item in my_string:
+            my_dict[item] = item.count(item)
+        print(my_dict)
+
+        word_count(input())
+
     
          
 def main():
@@ -11,6 +20,6 @@ def main():
     input1 = ""
     for _ in range(num):
         input1 += input()
-    #print(tokenize(''))
+    return tokenize('')
 if __name__ == '__main__':
     main()
