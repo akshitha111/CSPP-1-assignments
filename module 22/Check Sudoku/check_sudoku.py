@@ -18,6 +18,7 @@ def check_sudoku(sudoku):
          '5' and '6' and '7' and '8' and '9':
             print(True)
         return False
+        check_sudoku(sudoku)
 def main():
     '''
         main function to read input sudoku from console
