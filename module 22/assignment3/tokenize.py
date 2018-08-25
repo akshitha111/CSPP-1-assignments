@@ -13,13 +13,13 @@ def tokenize(string):
                 my_dict[item] += 1
             else:
                 my_dict[item] = 1
-    print(my_dict)  
+            print(my_dict)
 def main():
     """ token """
     num = int(input())
     input1 = ""
     for _ in range(num):
         input1 += input()
-    return (tokenize(''))
+    return tokenize('')
 if __name__ == '__main__':
     main()
