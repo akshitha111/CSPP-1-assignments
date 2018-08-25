@@ -2,22 +2,26 @@
 Write a function to tokenize a given string and return a dictionary with the frequency of
 each word
 '''
-
+import re
 def tokenize(string):
-    dict = {}
-    s = int(input())
-    count = 0
-    for i in range(s):
-        i = str(input())
-        for j in i:
-            count += 1
-        print(count)
-
+    input1 = re.split(r'[^a-zA-Z0-9]',string.split())
+    while '' in input1:
+        input1.remove('')
+    dict1 = {}
+    for word in input1:
+        dict1[word] = input1.count(word)
+    return dict1
     
 
     
             
-#def main():
+def main():
+    num = int(input())
+    input1 = ""
+    for _ in range(num):
+        input1 += input()
+    print(tokenize(''))
+
     
 
 
