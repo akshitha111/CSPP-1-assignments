@@ -264,17 +264,9 @@ def decrypt_story():
     ''' Decrypt the story text using CiphertextMessage class and return the
         shift value and decrypted string in a tuple.
     '''
-    for shift in range(27):
-           message = PlaintextMessage(self.message_text, shift)
-           decrypted = message.get_message_text_encrypted()
-           valid_words_count = 0
-           for word in decrypted.split(' '):
-               if is_word(self.valid_words, word):
-                   valid_words_count += 1
-           if self.max_valid_words < valid_words_count:
-               self.max_valid_words = valid_words_count
-               self.decrypted_message = (26 - shift, decrypted)
-    return self.decrypted_message
+    decrypt_object = CiphertextMessage(get_story_string())
+    return decrypt_object.decrypt_message()
+
 
     #pass #delete this line when you write your code.
 
