@@ -84,7 +84,7 @@ class Message():
         shift_upper_vals = upper_values[shift:] + upper_values[:shift]
         total_keys = lower_keys + upper_keys
         total_values = shift_upper_vals + shift_lower_vals
-        self.shift_dict = dict(zip(total_values + total_keys))
+        self.shift_dict = dict(zip(total_values ,total_keys))
         return self.shift_dict
     def apply_shift(self,shift):
         new_msg = []
