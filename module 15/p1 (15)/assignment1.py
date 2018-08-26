@@ -258,7 +258,7 @@ class CiphertextMessage(Message):
             if self.max_valid_words < valid_words_count:
                 self.max_valid_words = valid_words_count
                 self.decrypted_message = (26-shift, decrypted)
-            return self.decrypted_message
+        return self.decrypted_message
 
 
 
