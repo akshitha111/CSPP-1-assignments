@@ -65,6 +65,27 @@ WORDLIST_FILENAME = 'words.txt'
 
 
 ### Paste your implementation of the Message class here
+class Message():
+    def __init__(self,text):
+        self.message_text = text
+        self.valid_words = load_words("words.txt")
+        self.shift_dict = {}
+    def get_message_text(self):
+        return self.message_text
+    def get_valid_words(self):
+        return self.valid_words[:]
+    def build_shift_dict(self,shift):
+        lower_keys = list(string.ascii_lowercase)
+        lower_values = list(string.ascii_lowercase)
+        shift_lower_vals = lower_values[shift:] + lower_values[:shift]
+        upper_keys = list(string.ascii_uppercase)
+        upper_values = list(string.ascii_uppercase)
+        shift_upper_vals = upper_values[shift:] + upper_values[:shift]
+        total_keys = lower_keys + upper_keys
+        total_values = shift_upper_vals + shift_lower_vals
+        self.shift_dict = dict(zip(total_values + total_keys))
+        return self.shift_dict
+    
         
 
 def main():
