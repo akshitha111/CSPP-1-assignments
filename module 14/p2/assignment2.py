@@ -133,7 +133,7 @@ class Message(object):
 ### Paste your implementation of the `PlaintextMessage` class here
 class PlaintextMessage(Message):
     def __init__(self, text, shift):
-        Message__init__(self, text)
+        Message.__init__(self, text)
         self.text = text
         self.shift = shift
         self.valid_words = load_words("words.txt")
