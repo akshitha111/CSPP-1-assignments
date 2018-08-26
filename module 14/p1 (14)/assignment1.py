@@ -88,7 +88,7 @@ class Message():
     def apply_shift(self,shift):
         new_msg = []
         for i in self.message_text:
-            if i not in build_shift_dict(shift).keys():
+            if i not in self.build_shift_dict(shift).keys():
                 new_msg.append(i)
                 continue
             else:
