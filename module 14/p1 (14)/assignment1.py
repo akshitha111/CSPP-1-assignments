@@ -76,15 +76,15 @@ class Message():
     def get_valid_words(self):
         return self.valid_words[:]
     def build_shift_dict(self, shift):
-        lower_keys = list(string.ascii_lowercase)
+         lower_keys = list(string.ascii_lowercase)
         lower_values = list(string.ascii_lowercase)
         shift_lower_vals = lower_values[shift:] + lower_values[:shift]
         upper_keys = list(string.ascii_uppercase)
         upper_values = list(string.ascii_uppercase)
         shift_upper_vals = upper_values[shift:] + upper_values[:shift]
         total_keys = lower_keys + upper_keys
-        total_values = shift_upper_vals + shift_lower_vals
-        self.shift_dict = dict(zip(total_keys ,total_values))
+        total_values = shift_lower_vals + shift_upper_vals
+        self.shift_dict = dict(zip(total_keys, total_values))
         return self.shift_dict
     def apply_shift(self,shift):
         new_msg = []
