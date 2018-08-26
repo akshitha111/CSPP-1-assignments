@@ -229,7 +229,7 @@ class CiphertextMessage(Message):
             self.valid_words (list, determined using helper function load_words)
         '''
         self.message_text = text
-        self,valid_words = load_words("words.txt")[:]
+        self.valid_words = load_words("words.txt")[:]
         self.max_valid_words = 0
 
     def decrypt_message(self):
