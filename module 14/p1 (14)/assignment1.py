@@ -90,7 +90,8 @@ class Message():
         total_values = shift_lower_vals + shift_upper_vals
         self.shift_dict = dict(zip(total_keys, total_values))
         return self.shift_dict
-    def apply_shift(self,shift):
+    def apply_shift(self, shift):
+        """ apply shift """
         new_msg = []
         for i in self.message_text:
             if i not in self.build_shift_dict(shift).keys():
